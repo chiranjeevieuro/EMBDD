@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/silardg/Documents/Development/EMBDD/4channelPowerSupply/4channelPowerSupply.sch)
-    (date "2021 June 02, Wednesday 21:31:38")
+    (date "2021 June 02, Wednesday 21:32:40")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -324,6 +324,7 @@
       (tstamp 60CC8C92))
     (comp (ref D1)
       (value D_Zener)
+      (footprint Diode_SMD:D_0603_1608Metric)
       (datasheet ~)
       (libsource (lib Device) (part D_Zener) (description "Zener diode"))
       (sheetpath (names /) (tstamps /))
