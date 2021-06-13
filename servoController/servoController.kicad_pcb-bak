@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 46)
+    (drawings 42)
     (tracks 339)
     (zones 0)
     (modules 49)
@@ -2345,10 +2345,6 @@
     (pad "" np_thru_hole circle (at 0 0) (size 2.1 2.1) (drill 2.1) (layers *.Cu *.Mask))
   )
 
-  (gr_line (start 191.135 81.915) (end 207.01 81.915) (layer B.SilkS) (width 0.12) (tstamp 60C69A97))
-  (gr_line (start 191.135 88.265) (end 191.135 81.915) (layer B.SilkS) (width 0.12))
-  (gr_line (start 207.01 88.265) (end 191.135 88.265) (layer B.SilkS) (width 0.12))
-  (gr_line (start 207.01 81.915) (end 207.01 88.265) (layer B.SilkS) (width 0.12))
   (gr_line (start 198.755 118.745) (end 191.135 118.745) (layer B.SilkS) (width 0.12) (tstamp 60C69A96))
   (gr_line (start 198.755 128.27) (end 198.755 118.745) (layer B.SilkS) (width 0.12))
   (gr_line (start 191.135 128.27) (end 198.755 128.27) (layer B.SilkS) (width 0.12))
