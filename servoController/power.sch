@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:DMP3013SFV Q?
+U 1 1 60CB4114
+P 3250 2450
+F 0 "Q?" V 3592 2450 50  0000 C CNN
+F 1 "DMP3013SFV" V 3501 2450 50  0000 C CNN
+F 2 "Package_SON:Diodes_PowerDI3333-8" H 3450 2375 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3013SFV.pdf" V 3250 2450 50  0001 L CNN
+	1    3250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60CB5212
+P 3000 2350
+F 0 "#PWR?" H 3000 2200 50  0001 C CNN
+F 1 "VCC" V 3015 2477 50  0000 L CNN
+F 2 "" H 3000 2350 50  0001 C CNN
+F 3 "" H 3000 2350 50  0001 C CNN
+	1    3000 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CB5A0E
+P 3250 2750
+F 0 "#PWR?" H 3250 2500 50  0001 C CNN
+F 1 "GND" H 3255 2577 50  0000 C CNN
+F 2 "" H 3250 2750 50  0001 C CNN
+F 3 "" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 60CB639E
+P 3550 2300
+F 0 "#PWR?" H 3550 2150 50  0001 C CNN
+F 1 "VDD" H 3565 2473 50  0000 C CNN
+F 2 "" H 3550 2300 50  0001 C CNN
+F 3 "" H 3550 2300 50  0001 C CNN
+	1    3550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2350 3550 2350
+Wire Wire Line
+	3550 2300 3550 2350
+Connection ~ 3550 2350
+Wire Wire Line
+	3000 2350 3050 2350
+$Comp
+L Regulator_Linear:APE8865N-33-HF-3 U?
+U 1 1 60CB7E53
+P 4050 2350
+F 0 "U?" H 4050 2592 50  0000 C CNN
+F 1 "APE8865N-33-HF-3" H 4050 2501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 2575 50  0001 C CIN
+F 3 "http://www.tme.eu/fr/Document/ced3461ed31ea70a3c416fb648e0cde7/APE8865-3.pdf" H 4050 2350 50  0001 C CNN
+	1    4050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CBA528
+P 4400 2550
+AR Path="/60C5C4B1/60CBA528" Ref="C?"  Part="1" 
+AR Path="/60CB3D6B/60CBA528" Ref="C?"  Part="1" 
+F 0 "C?" H 4450 2650 50  0000 L CNN
+F 1 "1uF" H 4450 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 2400 50  0001 C CNN
+F 3 "~" H 4400 2550 50  0001 C CNN
+F 4 "1uF/0402/10%/50V" H 4400 2550 50  0001 C CNN "Characteristics"
+	1    4400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CBA5B6
+P 3650 2550
+AR Path="/60C5C4B1/60CBA5B6" Ref="C?"  Part="1" 
+AR Path="/60CB3D6B/60CBA5B6" Ref="C?"  Part="1" 
+F 0 "C?" H 3700 2650 50  0000 L CNN
+F 1 "1uF" H 3700 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3688 2400 50  0001 C CNN
+F 3 "~" H 3650 2550 50  0001 C CNN
+F 4 "1uF/0402/10%/50V" H 3650 2550 50  0001 C CNN "Characteristics"
+	1    3650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CBAB46
+P 3650 2750
+F 0 "#PWR?" H 3650 2500 50  0001 C CNN
+F 1 "GND" H 3655 2577 50  0000 C CNN
+F 2 "" H 3650 2750 50  0001 C CNN
+F 3 "" H 3650 2750 50  0001 C CNN
+	1    3650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CBAE9A
+P 4050 2750
+F 0 "#PWR?" H 4050 2500 50  0001 C CNN
+F 1 "GND" H 4055 2577 50  0000 C CNN
+F 2 "" H 4050 2750 50  0001 C CNN
+F 3 "" H 4050 2750 50  0001 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CBB053
+P 4400 2750
+F 0 "#PWR?" H 4400 2500 50  0001 C CNN
+F 1 "GND" H 4405 2577 50  0000 C CNN
+F 2 "" H 4400 2750 50  0001 C CNN
+F 3 "" H 4400 2750 50  0001 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2350 3650 2350
+Wire Wire Line
+	3650 2400 3650 2350
+Connection ~ 3650 2350
+Wire Wire Line
+	3650 2350 3750 2350
+Wire Wire Line
+	3650 2700 3650 2750
+Wire Wire Line
+	4050 2650 4050 2750
+Wire Wire Line
+	4400 2700 4400 2750
+Wire Wire Line
+	4350 2350 4400 2350
+Wire Wire Line
+	4400 2350 4400 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60CBEA72
+P 4450 2350
+F 0 "#PWR?" H 4450 2200 50  0001 C CNN
+F 1 "+3.3V" V 4465 2478 50  0000 L CNN
+F 2 "" H 4450 2350 50  0001 C CNN
+F 3 "" H 4450 2350 50  0001 C CNN
+	1    4450 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2350 4450 2350
+Connection ~ 4400 2350
+Wire Wire Line
+	3250 2650 3250 2750
+$EndSCHEMATC

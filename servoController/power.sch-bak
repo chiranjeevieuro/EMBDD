@@ -1,0 +1,71 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:DMP3013SFV Q?
+U 1 1 60CB4114
+P 3250 2450
+F 0 "Q?" V 3592 2450 50  0000 C CNN
+F 1 "DMP3013SFV" V 3501 2450 50  0000 C CNN
+F 2 "Package_SON:Diodes_PowerDI3333-8" H 3450 2375 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3013SFV.pdf" V 3250 2450 50  0001 L CNN
+	1    3250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60CB5212
+P 3000 2350
+F 0 "#PWR?" H 3000 2200 50  0001 C CNN
+F 1 "VCC" V 3015 2477 50  0000 L CNN
+F 2 "" H 3000 2350 50  0001 C CNN
+F 3 "" H 3000 2350 50  0001 C CNN
+	1    3000 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CB5A0E
+P 3250 2700
+F 0 "#PWR?" H 3250 2450 50  0001 C CNN
+F 1 "GND" H 3255 2527 50  0000 C CNN
+F 2 "" H 3250 2700 50  0001 C CNN
+F 3 "" H 3250 2700 50  0001 C CNN
+	1    3250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 60CB639E
+P 3550 2300
+F 0 "#PWR?" H 3550 2150 50  0001 C CNN
+F 1 "VDD" H 3565 2473 50  0000 C CNN
+F 2 "" H 3550 2300 50  0001 C CNN
+F 3 "" H 3550 2300 50  0001 C CNN
+	1    3550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2350 3550 2350
+Wire Wire Line
+	3550 2300 3550 2350
+Connection ~ 3550 2350
+Wire Wire Line
+	3550 2350 3650 2350
+Wire Wire Line
+	3250 2650 3250 2700
+Wire Wire Line
+	3000 2350 3050 2350
+$EndSCHEMATC
